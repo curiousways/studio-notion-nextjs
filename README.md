@@ -1,4 +1,4 @@
-# NEXT-TYPESCRIPT STARTER
+# STUDIO NOTION
 
 ### What's Included
 
