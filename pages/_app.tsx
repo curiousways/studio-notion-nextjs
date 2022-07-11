@@ -7,11 +7,11 @@ import * as Fathom from "fathom-client";
 
 import * as gtag from "../lib/gtag";
 
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
+import AppContextProvider from "@/context/AppContext";
+
+import Layout from "@/components/common/Layout";
 
 import "../styles/globals.css"; // Global style sheet for css
-// import "../styles/global.scss"; //Global stylesheet for sass
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           description: "Enter description here",
           images: [
             {
-              url: "Enter social icon path here",
+              url: "/social-share.jpg",
               width: 1200,
               height: 630,
               alt: "Enter social image alt text here",
@@ -70,9 +70,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
-      <Nav />
-      <Component {...pageProps} />
-      <Footer />
+      <AppContextProvider>
+        <>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </>
+      </AppContextProvider>
     </>
   );
 }

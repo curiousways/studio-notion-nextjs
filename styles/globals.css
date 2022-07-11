@@ -4,24 +4,64 @@
 
 @layer base {
   @font-face {
-    font-family: "font name";
-    src: url("/assets/fonts/MuseoSans300/font.woff2") format("woff2"),
-      url("/assets/fonts/MuseoSans300/font.woff") format("woff");
-    font-weight: font-weight;
+    font-family: "Druk Wide";
+    src: url("/assets/fonts/DrukWide-Heavy-Web.woff2") format("woff2"),
+      url("/assets/fonts/DrukWide-Heavy-Web.woff") format("woff");
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "font name";
-    src: url("/assets/fonts/MuseoSans500/font.woff2") format("woff2"),
-      url("/assets/fonts/MuseoSans500/font.woff") format("woff");
-    font-weight: font-weight;
-    font-style: strong;
+    font-family: "GT Walsheim";
+    src: url("/assets/fonts/GT-Walsheim-Regular.woff2") format("woff2"),
+      url("/assets/fonts/GT-Walsheim-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "GT Walsheim medium";
+    src: url("/assets/fonts/GT-Walsheim-Medium.woff2") format("woff2"),
+      url("/assets/fonts/GT-Walsheim-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
     font-display: swap;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  body {
+    @apply relative text-[28px] leading-[36px];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-druk text-center;
+  }
+
+  h1,
+  h2 {
+    @apply text-2xl xl:text-[40px] xl:leading-10 max-w-[945px] mx-auto text-center;
+  }
+
+  h3 {
+    @apply text-[28px] leading-[48px];
+  }
+}
+
+@layer utilities {
+  .home-bg {
+    /* background: linear-gradient(to bottom, #5bbdbe 0%, #6f90bd 101.31%); */
+    background: linear-gradient(174.11deg, #5bbdbe 0%, #6f90bd 101.31%);
+  }
+
+  .container {
+    @apply w-5/6 mx-auto max-w-[1471px];
   }
 }
