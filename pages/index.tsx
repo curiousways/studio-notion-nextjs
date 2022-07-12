@@ -110,8 +110,8 @@ const Home: NextPage = () => {
           <h3>OUR WORK</h3>
           <div className="grid gap-y-10 md:gap-y-20 md:gap-x-32 md:grid-cols-2 xl:grid-cols-3 max-w-[1271px] mx-auto text-center">
             {logos.map(({ src, alt, text }) => (
-              <div className="text-center mx-auto space-y-4">
-                <div key={alt} className="w-[240px] h-[110px] relative mx-auto">
+              <div key={alt} className="text-center mx-auto space-y-4">
+                <div className="w-[240px] h-[110px] relative mx-auto">
                   <Image src={src} alt={alt} layout="fill" />
                 </div>
                 <p className="max-w-[410px]">{text}</p>

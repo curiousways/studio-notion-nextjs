@@ -15,7 +15,7 @@ const Nav = () => {
   const navTheme = asPath === "/" ? "light" : "dark";
   return (
     <div
-      className={`relative z-50 px-5 xl:px-[100px] pt-9 xl:pt-[50px] 2xl:px-0 2xl:max-w-[1272px] 2xl:mx-auto flex flex-col gap-y-4 xl:flex-row items-center justify-between ${
+      className={`relative z-50 px-5 xl:px-[100px] pt-9 xl:pt-[50px] 2xl:px-0 2xl:max-w-[1272px] 2xl:mx-auto flex flex-col items-center gap-y-4 xl:flex-row xl:justify-between ${
         navTheme === "light" && "text-white"
       }`}
     >
@@ -50,7 +50,7 @@ const Nav = () => {
       <nav>
         <ul className="flex flex-wrap gap-x-10 gap-y-1 justify-center xl:justify-start xl:flex-nowrap xl:gap-x-[53px] font-druk">
           {links.map(({ text, link }) => (
-            <li>
+            <li key={text}>
               <NavLink href={link}>{text}</NavLink>
             </li>
           ))}

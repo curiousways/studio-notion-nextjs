@@ -33,12 +33,12 @@ export const logos = [
   },
   {
     src: amazonMusic,
-    alt: "amazonMusic",
+    alt: "amazon music",
     text: "+44 creative ideation and artistic strategy",
   },
   {
     src: amazonFashion,
-    alt: "amazonFashion",
+    alt: "amazon fashion",
     text: "+44 creative ideation and artistic strategy",
   },
   {
