@@ -10,10 +10,10 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-  const { bodyTheme } = useAppContext();
+  const { pageTheme } = useAppContext();
 
   return (
-    <div className={`${bodyTheme && bodyTheme}`}>
+    <div className={`${pageTheme && pageTheme}`}>
       <Nav />
       {children}
       <Footer />

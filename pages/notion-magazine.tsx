@@ -15,19 +15,18 @@ import img4 from "../public/assets/images/home/img-4.jpg";
 import img5 from "../public/assets/images/home/img-5.jpg";
 import img6 from "../public/assets/images/home/img-6.jpg";
 
-const LiveEvents: NextPage = () => {
+const NotionMagazine: NextPage = () => {
   const { setPageTheme } = useAppContext();
 
   useEffect(() => {
-    setPageTheme("live-events-bg");
+    setPageTheme("notion-magazine-bg");
   }, []);
-
   return (
     <>
       <div className="container">
         <Header
-          title="Live Events"
-          summary="Studio Notion has run events from 200 people to over 3,000 and has a engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
+          title="NOTION MAGAZINE"
+          summary="Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout. Notion Magazine communicates directly with Generation Z and can ensure your speaking to your target audience."
         />
       </div>
 
@@ -79,4 +78,4 @@ const LiveEvents: NextPage = () => {
   );
 };
 
-export default LiveEvents;
+export default NotionMagazine;

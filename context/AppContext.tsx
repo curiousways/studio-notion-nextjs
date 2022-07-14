@@ -9,8 +9,8 @@ import {
 type bodyTheme = string;
 
 type ContextType = {
-  bodyTheme: bodyTheme;
-  setFooterTheme: (theme: bodyTheme) => void;
+  pageTheme: bodyTheme;
+  setPageTheme: (theme: bodyTheme) => void;
 };
 
 const AppContext = createContext<ContextType | null>(null);
@@ -20,13 +20,13 @@ type Props = {
 };
 
 export default function AppContextProvider({ children }: Props) {
-  const [bodyTheme, setBodyTheme] = useState("");
+  const [pageTheme, setPageTheme] = useState("");
 
   return (
     <AppContext.Provider
       value={{
-        bodyTheme: bodyTheme,
-        setFooterTheme: setBodyTheme,
+        pageTheme: pageTheme,
+        setPageTheme: setPageTheme,
       }}
     >
       {children}

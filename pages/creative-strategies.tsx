@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 
 import type { NextPage } from "next";
+import Image from "next/image";
 
 import { useAppContext } from "@/context/AppContext";
 
 import Header from "@/components/common/Header";
-import Slider from "@/components/common/Slider";
 import ImgLink from "@/components/common/ImgLink";
 
 import img1 from "../public/assets/images/home/img-1.jpg";
@@ -15,39 +15,49 @@ import img4 from "../public/assets/images/home/img-4.jpg";
 import img5 from "../public/assets/images/home/img-5.jpg";
 import img6 from "../public/assets/images/home/img-6.jpg";
 
-const LiveEvents: NextPage = () => {
+import spotify from "../public/assets/images/home/spotify.svg";
+import bulldog from "../public/assets/images/home/bulldog.svg";
+import flannels from "../public/assets/images/home/flannels.svg";
+
+const CreativeStrategies: NextPage = () => {
   const { setPageTheme } = useAppContext();
 
   useEffect(() => {
-    setPageTheme("live-events-bg");
+    setPageTheme("creative-strategies-bg");
   }, []);
 
   return (
     <>
       <div className="container">
         <Header
-          title="Live Events"
-          summary="Studio Notion has run events from 200 people to over 3,000 and has a engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
+          title="Creative Strategies "
+          summary="Helping brands reach an untapped Generation Z audience is our passion. We know what this demographic wants to see, hear and do. We’ll work with you to develop bespoke creative strategies that get your brand noticed across social, experiential and digital media."
         />
       </div>
 
       <main>
-        <Slider />
         <div className="container">
-          <div className="max-w-[627px] font-sans-regular text-xl leading-8 space-y-4 mt-7">
-            <p>
-              We chat to multi-talented creative @josie_ho_chiu about the latest
-              step on her trailblazing path from Hong Kong to Hollywood.
-            </p>
-            <p>
-              Read the full feature at Notion.online Photography @martamichalak
-              Hair & Makeup @barriegmakeup Styling @hairyspice94 Production
-              @studionotion
-            </p>
+          {/* Logos */}
+          <div className="grid gap-y-10 md:gap-y-10 md:gap-x-32 md:grid-cols-2 lg:grid-cols-3 max-w-[1271px] mx-auto text-center mt-10 mb-20">
+            <div className="text-center">
+              <div className="w-[240px] h-[110px] relative mx-auto">
+                <Image src={spotify} alt="spotify" layout="fill" />
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="w-[240px] h-[110px] relative mx-auto">
+                <Image src={flannels} alt="flannels" layout="fill" />
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="w-[240px] h-[110px] relative mx-auto">
+                <Image src={bulldog} alt="bulldog" layout="fill" />
+              </div>
+            </div>
           </div>
         </div>
         {/* Media */}
-        <div className="mt-10">
+        <div>
           {/* Grid */}
           <div className="grid md:grid-cols-2 xl:grid-cols-3">
             <ImgLink image={img1} text="Social Media" link="/" />
@@ -79,4 +89,4 @@ const LiveEvents: NextPage = () => {
   );
 };
 
-export default LiveEvents;
+export default CreativeStrategies;

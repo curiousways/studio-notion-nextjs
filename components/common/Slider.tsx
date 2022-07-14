@@ -21,14 +21,15 @@ const Slider = () => {
   const [slide, setSlide] = useState(1);
 
   return (
-    <div className="mt-[90px] px-8 md:px-0 md:ml-[101px]">
+    <div className="mt-[90px] w-5/6 mx-auto md:mx-0 md:ml-auto md:w-11/12 3xl:max-w-[1471px] 3xl:mx-auto">
       <Swiper
         modules={[Navigation, A11y]}
-        spaceBetween={20}
+        spaceBetween={8}
         slidesPerGroup={1}
         rewind={true}
         // autoHeight={true}
         // centeredSlides={true}
+        centerInsufficientSlides
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -61,6 +62,15 @@ const Slider = () => {
           <Image priority src={img3} />
         </SwiperSlide>
         <SwiperSlide>
+          <Image priority src={img2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image priority src={img3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image priority src={img1} />
+        </SwiperSlide>
+        {/* <SwiperSlide>
           <Image priority src={img4} />
         </SwiperSlide>
         <SwiperSlide>
@@ -71,8 +81,8 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image priority src={img7} />
-        </SwiperSlide>
-        <div className="mt-8 font-sans-regular flex items-center space-x-8">
+        </SwiperSlide> */}
+        <div className="mt-4 font-sans-regular flex items-center space-x-8">
           <span className="swiper-button-prev text-[40px] leading-8 cursor-pointer">
             ←
           </span>

@@ -65,6 +65,18 @@
     background: linear-gradient(174.11deg, #5bbdbe 0%, #cf2b8d 101.31%);
   }
 
+  .notion-magazine-bg {
+    background: linear-gradient(174.11deg, #b76091 0%, #d9626e 101.31%);
+  }
+
+  .creative-strategies-bg {
+    background: linear-gradient(174.11deg, #ffd98f 0%, #ff5500 101.31%);
+  }
+
+  .artist-services-bg {
+    background: linear-gradient(174.11deg, #b76091 0%, #d9626e 101.31%);
+  }
+
   .container {
     @apply w-5/6 mx-auto max-w-[1471px];
   }

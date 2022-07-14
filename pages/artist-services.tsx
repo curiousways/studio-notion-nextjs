@@ -15,11 +15,11 @@ import img4 from "../public/assets/images/home/img-4.jpg";
 import img5 from "../public/assets/images/home/img-5.jpg";
 import img6 from "../public/assets/images/home/img-6.jpg";
 
-const LiveEvents: NextPage = () => {
+const ArtistServices: NextPage = () => {
   const { setPageTheme } = useAppContext();
 
   useEffect(() => {
-    setPageTheme("live-events-bg");
+    setPageTheme("artist-services-bg");
   }, []);
 
   return (
@@ -79,4 +79,4 @@ const LiveEvents: NextPage = () => {
   );
 };
 
-export default LiveEvents;
+export default ArtistServices;

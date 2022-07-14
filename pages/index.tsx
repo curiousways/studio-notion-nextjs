@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useAppContext } from "@/context/AppContext";
 
 import Header from "@/components/home/Header";
+import ImgLink from "@/components/common/ImgLink";
 
 import img1 from "../public/assets/images/home/img-1.jpg";
 import img2 from "../public/assets/images/home/img-2.jpg";
@@ -16,21 +17,11 @@ import img6 from "../public/assets/images/home/img-6.jpg";
 
 import { logos } from "@/data/home";
 
-import spotify from "../public/assets/images/home/spotify.svg";
-import adidas from "../public/assets/images/home/adidas.svg";
-import bulldog from "../public/assets/images/home/bulldog.svg";
-import flannels from "../public/assets/images/home/flannels.svg";
-import amazonFashion from "../public/assets/images/home/amazon-fashion.svg";
-import amazonMusic from "../public/assets/images/home/amazon-music.svg";
-import jager from "../public/assets/images/home/jager.svg";
-import money from "../public/assets/images/home/money.svg";
-import drMartens from "../public/assets/images/home/dr-martens.svg";
-
 const Home: NextPage = () => {
-  const { setFooterTheme } = useAppContext();
+  const { setPageTheme } = useAppContext();
 
   useEffect(() => {
-    setFooterTheme("home-bg");
+    setPageTheme("home-bg");
   }, []);
 
   return (
@@ -50,58 +41,28 @@ const Home: NextPage = () => {
           <h3>Capabilities</h3>
           {/* Grid */}
           <div className="grid md:grid-cols-2 xl:grid-cols-3">
-            <div className="relative">
-              <Image src={img1} layout="responsive" alt="Social Media" />
-              <div className="absolute bottom-0 left-0 h-[200px] w-full text-white bg-dark-overlay flex justify-center items-center">
-                <p className="text-[25px] leading-[27.5px] font-druk text-center px-6">
-                  Social Media
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <Image src={img2} layout="responsive" alt="Live Events" />
-              <div className="absolute bottom-0 left-0 h-[200px] w-full text-white bg-dark-overlay flex justify-center items-center">
-                <p className="text-[25px] leading-[27.5px] font-druk text-center px-6 max-w-[429px]">
-                  Live Events
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <Image src={img3} layout="responsive" alt="Notion Magazine" />
-              <div className="absolute bottom-0 left-0 h-[200px] w-full text-white bg-dark-overlay flex justify-center items-center">
-                <p className="text-[25px] leading-[27.5px] font-druk text-center px-6 max-w-[429px]">
-                  Notion Magazine
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <Image src={img4} layout="responsive" alt="Creative Strategies" />
-              <div className="absolute bottom-0 left-0 h-[200px] w-full text-white bg-dark-overlay flex justify-center items-center">
-                <p className="text-[25px] leading-[27.5px] font-druk text-center px-6 max-w-[429px]">
-                  Creative Strategies
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <Image
-                src={img5}
-                layout="responsive"
-                alt="Content Creative & Production"
-              />
-              <div className="absolute bottom-0 left-0 h-[200px] w-full text-white bg-dark-overlay flex justify-center items-center">
-                <p className="text-[25px] leading-[27.5px] font-druk text-center px-6 max-w-[429px]">
-                  Content Creative & Production
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <Image src={img6} layout="responsive" alt="Artist Services" />
-              <div className="absolute bottom-0 left-0 h-[200px] w-full text-white bg-dark-overlay flex justify-center items-center">
-                <p className="text-[25px] leading-[27.5px] font-druk text-center px-6 max-w-[429px]">
-                  Artist Services
-                </p>
-              </div>
-            </div>
+            <ImgLink image={img1} text="Social Media" link="/" />
+            <ImgLink image={img2} text="Live Events" link="/live-events" />
+            <ImgLink
+              image={img3}
+              text="Notion Magazine"
+              link="/notion-magazine"
+            />
+            <ImgLink
+              image={img4}
+              text="Creative Strategies"
+              link="/creative-strategies"
+            />
+            <ImgLink
+              image={img5}
+              text="Content Creative & Production"
+              link="/"
+            />
+            <ImgLink
+              image={img6}
+              text="Artist Services"
+              link="/artist-services"
+            />
           </div>
         </div>
 
