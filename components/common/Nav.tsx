@@ -1,22 +1,34 @@
+import { useEffect, useState } from "react";
+
 import { useRouter } from "next/router";
 import Link from "next/link";
 
 import NavLink from "./NavLink";
+import MobileNav from "./MobileNav";
 
-const links = [
-  { text: "Capabilities", link: "/#capabilities" },
-  { text: "Our Work ", link: "/#our-work" },
-  { text: "Unrivalled", link: "/#unrivalled" },
-  { text: "Get in touch", link: "mailto:info@studionotion.com" },
-];
+import { navLinks } from "@/data/index";
 
 const Nav = () => {
   const { asPath } = useRouter();
-  const navTheme = asPath === "/" ? "light" : "dark";
+  const isHomePage =
+    asPath === "/" || (asPath.lastIndexOf("/") === 0 && asPath.includes("/#"));
+  const hamburgerFill = isHomePage ? "white" : "black";
+  const navTheme = isHomePage ? "light" : "dark";
+
+  const [showNav, setShowNav] = useState(false);
+
+  const closeNav = () => {
+    setShowNav(false);
+  };
+
+  const openNav = () => {
+    setShowNav(true);
+  };
+
   return (
-    <div className="container">
+    <div className="container z-50">
       <div
-        className={`relative z-50 pt-9 xl:pt-[50px] flex flex-col items-start gap-y-4 xl:flex-row xl:justify-between ${
+        className={`relative z-50 pt-9 xl:pt-[50px] flex items-start justify-between ${
           navTheme === "light" && "text-white"
         }`}
       >
@@ -48,9 +60,25 @@ const Nav = () => {
           </a>
         </Link>
 
+        {/* Hamburger */}
+        <svg
+          width="39"
+          height="25"
+          viewBox="0 0 39 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="xl:hidden w-6 h-6 md:w-9 md:h-9 cursor-pointer ml-auto"
+          onClick={openNav}
+        >
+          <rect y="11" width="39" height="3" fill={hamburgerFill} />
+          <rect y="22" width="39" height="3" fill={hamburgerFill} />
+          <rect width="39" height="3" fill={hamburgerFill} />
+        </svg>
+
         <nav>
-          <ul className="flex flex-wrap gap-x-10 gap-y-1 justify-center xl:justify-start xl:flex-nowrap xl:gap-x-[53px] font-druk">
-            {links.map(({ text, link }) => (
+          <MobileNav showNav={showNav} close={closeNav} />
+          <ul className="hidden xl:flex justify-center xl:justify-start xl:gap-x-[53px] font-druk">
+            {navLinks.map(({ text, link }) => (
               <li className="flex" key={text}>
                 <NavLink href={link}>{text}</NavLink>
               </li>

@@ -6,7 +6,7 @@ import { useAppContext } from "@/context/AppContext";
 
 import Header from "@/components/common/Header";
 import Slider from "@/components/common/Slider";
-import ImgLink from "@/components/common/ImgLink";
+import ImageNav from "@/components/common/ImageNav";
 
 import img1 from "../public/assets/images/home/service_artist_services.jpg";
 import img2 from "../public/assets/images/home/service_content_production.jpg";
@@ -47,42 +47,7 @@ const ContentProduction: NextPage = () => {
           </div>
         </div>
         {/* Media */}
-        <div className="mt-10">
-          {/* Grid */}
-          <div className="grid md:grid-cols-2 xl:grid-cols-3">
-          <ImgLink 
-              image={img1} 
-              text="Artist Services"
-              link="/artist-services/"              
-            />
-            <ImgLink 
-              image={img2} 
-              text="Content Creative & Production"
-              link="/content-production/"              
-
-            />
-            <ImgLink
-              image={img3}
-              text="Creative Strategies"
-              link="/creative-strategies/"
-            />
-            <ImgLink
-              image={img4}
-              text="Live Events" 
-              link="/live-events/"               
-            />
-            <ImgLink
-              image={img5}
-              text="Notion Magazine"
-              link="/notion-magazine/"              
-            />
-            <ImgLink
-              image={img6}
-              text="Social Media" 
-              link="/social-media/" 
-            />
-          </div>
-        </div>
+        <ImageNav />
       </main>
     </>
   );
