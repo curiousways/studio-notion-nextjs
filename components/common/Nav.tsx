@@ -4,10 +4,10 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 
 const links = [
-  { text: "Capabilities", link: "/capabilities" },
-  { text: "OUR WORK ", link: "/our-work" },
-  { text: "unrivalled", link: "/unrivalled" },
-  { text: "GET IN TOUCH", link: "mailto:info@studionotion.com" },
+  { text: "Capabilities", link: "/#capabilities" },
+  { text: "Our Work ", link: "/#our-work" },
+  { text: "Unrivalled", link: "/#unrivalled" },
+  { text: "Get in touch", link: "mailto:info@studionotion.com" },
 ];
 
 const Nav = () => {
@@ -16,7 +16,7 @@ const Nav = () => {
   return (
     <div className="container">
       <div
-        className={`relative z-50 pt-9 xl:pt-[50px] flex flex-col items-center gap-y-4 xl:flex-row xl:justify-between ${
+        className={`relative z-50 pt-9 xl:pt-[50px] flex flex-col items-start gap-y-4 xl:flex-row xl:justify-between ${
           navTheme === "light" && "text-white"
         }`}
       >
@@ -51,7 +51,7 @@ const Nav = () => {
         <nav>
           <ul className="flex flex-wrap gap-x-10 gap-y-1 justify-center xl:justify-start xl:flex-nowrap xl:gap-x-[53px] font-druk">
             {links.map(({ text, link }) => (
-              <li key={text}>
+              <li className="flex" key={text}>
                 <NavLink href={link}>{text}</NavLink>
               </li>
             ))}

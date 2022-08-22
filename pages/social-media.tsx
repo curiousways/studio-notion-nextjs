@@ -15,7 +15,7 @@ import img4 from "../public/assets/images/home/service_live_events.jpg";
 import img5 from "../public/assets/images/home/service_notion_magazine.jpg";
 import img6 from "../public/assets/images/home/service_social_media.jpg";
 
-const LiveEvents: NextPage = () => {
+const SocialMedia: NextPage = () => {
   const { setPageTheme } = useAppContext();
 
   useEffect(() => {
@@ -88,4 +88,4 @@ const LiveEvents: NextPage = () => {
   );
 };
 
-export default LiveEvents;
+export default SocialMedia;

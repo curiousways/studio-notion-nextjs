@@ -1,64 +1,57 @@
-import img1 from "../../public/assets/images/home/img-1.jpg";
-import img2 from "../../public/assets/images/home/img-2.jpg";
-import img3 from "../../public/assets/images/home/img-3.jpg";
-import img4 from "../../public/assets/images/home/img-4.jpg";
-import img5 from "../../public/assets/images/home/img-5.jpg";
-import img6 from "../../public/assets/images/home/img-6.jpg";
-
-import spotify from "../../public/assets/images/home/spotify.svg";
-import adidas from "../../public/assets/images/home/adidas.svg";
-import bulldog from "../../public/assets/images/home/bulldog.svg";
-import flannels from "../../public/assets/images/home/flannels.svg";
-import amazonFashion from "../../public/assets/images/home/amazon-fashion.svg";
-import amazonMusic from "../../public/assets/images/home/amazon-music.svg";
-import jager from "../../public/assets/images/home/jager.svg";
-import money from "../../public/assets/images/home/money.svg";
-import drMartens from "../../public/assets/images/home/dr-martens.svg";
+import flannels from "../../public/assets/images/home/logo_flannels_1.png";
+import nb from "../../public/assets/images/home/logo_nb_2.png";
+import dm from "../../public/assets/images/home/logo_dr_martins_3.png";
+import bulldog from "../../public/assets/images/home/logo_bulldog_4.png";
+import northFace from "../../public/assets/images/home/logo_north_face_5.png";
+import havana from "../../public/assets/images/home/logo_havana_club_6.png";
+import virgin from "../../public/assets/images/home/logo_virgin_7.png";
+import warner from "../../public/assets/images/home/logo_warner_8.png";
+import estrella from "../../public/assets/images/home/logo_estrella_9.png";
 
 export const logos = [
   {
-    src: spotify,
-    alt: "spotify",
-    text: "+44 creative ideation and artistic strategy",
+    src: flannels,
+    alt: "Flannels",
+    text: "Creative Strategies",
   },
   {
-    src: flannels,
-    alt: "flannels",
-    text: "+44 creative ideation and artistic strategy",
+    src: nb,
+    alt: "New Balance",
+    text: "Content Production",
+  },
+  {
+    src: dm,
+    alt: "Dr Martens",
+    text: "Live Events",
   },
   {
     src: bulldog,
-    alt: "bulldog",
-    text: "+44 creative ideation and artistic strategy",
+    alt: "Bulldog Gin",
+    text: "Social Media",
   },
   {
-    src: amazonMusic,
-    alt: "amazon music",
-    text: "+44 creative ideation and artistic strategy",
+    src: northFace,
+    alt: "The North Face",
+    text: "Content Production",
   },
   {
-    src: amazonFashion,
-    alt: "amazon fashion",
-    text: "+44 creative ideation and artistic strategy",
+    src: havana,
+    alt: "Havana Club",
+    text: "Live Events",
   },
   {
-    src: money,
-    alt: "money",
-    text: "+44 creative ideation and artistic strategy",
+    src: virgin,
+    alt: "Virgin Money",
+    text: "Creative Strategies",
   },
   {
-    src: adidas,
-    alt: "adidas",
-    text: "+44 creative ideation and artistic strategy",
+    src: warner,
+    alt: "Warner Music",
+    text: "Artist Services",
   },
   {
-    src: drMartens,
-    alt: "dr martens",
-    text: "+44 creative ideation and artistic strategy",
-  },
-  {
-    src: jager,
-    alt: "jager",
-    text: "+44 creative ideation and artistic strategy",
+    src: estrella,
+    alt: "Estrella",
+    text: "Social Media",
   },
 ];

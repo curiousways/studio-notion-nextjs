@@ -15,7 +15,7 @@ import img4 from "../public/assets/images/home/service_live_events.jpg";
 import img5 from "../public/assets/images/home/service_notion_magazine.jpg";
 import img6 from "../public/assets/images/home/service_social_media.jpg";
 
-const LiveEvents: NextPage = () => {
+const ContentProduction: NextPage = () => {
   const { setPageTheme } = useAppContext();
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const LiveEvents: NextPage = () => {
     <>
       <div className="container">
         <Header
-          title="Live Events"
+          title="Content Production"
           summary="Studio Notion has run events from 200 people to over 3,000 and has a engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
         />
       </div>
@@ -88,4 +88,4 @@ const LiveEvents: NextPage = () => {
   );
 };
 
-export default LiveEvents;
+export default ContentProduction;

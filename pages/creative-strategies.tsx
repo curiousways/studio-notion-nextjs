@@ -8,16 +8,16 @@ import { useAppContext } from "@/context/AppContext";
 import Header from "@/components/common/Header";
 import ImgLink from "@/components/common/ImgLink";
 
-import img1 from "../public/assets/images/home/img-1.jpg";
-import img2 from "../public/assets/images/home/img-2.jpg";
-import img3 from "../public/assets/images/home/img-3.jpg";
-import img4 from "../public/assets/images/home/img-4.jpg";
-import img5 from "../public/assets/images/home/img-5.jpg";
-import img6 from "../public/assets/images/home/img-6.jpg";
+import img1 from "../public/assets/images/home/service_artist_services.jpg";
+import img2 from "../public/assets/images/home/service_content_production.jpg";
+import img3 from "../public/assets/images/home/service_creative_strategies.jpg";
+import img4 from "../public/assets/images/home/service_live_events.jpg";
+import img5 from "../public/assets/images/home/service_notion_magazine.jpg";
+import img6 from "../public/assets/images/home/service_social_media.jpg";
 
-import spotify from "../public/assets/images/home/spotify.svg";
-import bulldog from "../public/assets/images/home/bulldog.svg";
-import flannels from "../public/assets/images/home/flannels.svg";
+import spotify from "../public/assets/images/home/logo_nb_2.png";
+import bulldog from "../public/assets/images/home/logo_nb_2.png";
+import flannels from "../public/assets/images/home/logo_nb_2.png";
 
 const CreativeStrategies: NextPage = () => {
   const { setPageTheme } = useAppContext();
@@ -30,7 +30,7 @@ const CreativeStrategies: NextPage = () => {
     <>
       <div className="container">
         <Header
-          title="Creative Strategies "
+          title="Creative Strategies"
           summary="Helping brands reach an untapped Generation Z audience is our passion. We know what this demographic wants to see, hear and do. We’ll work with you to develop bespoke creative strategies that get your brand noticed across social, experiential and digital media."
         />
       </div>
@@ -60,27 +60,36 @@ const CreativeStrategies: NextPage = () => {
         <div>
           {/* Grid */}
           <div className="grid md:grid-cols-2 xl:grid-cols-3">
-            <ImgLink image={img1} text="Social Media" link="/" />
-            <ImgLink image={img2} text="Live Events" link="/live-events" />
+          <ImgLink 
+              image={img1} 
+              text="Artist Services"
+              link="/artist-services/"              
+            />
+            <ImgLink 
+              image={img2} 
+              text="Content Creative & Production"
+              link="/content-production/"              
+
+            />
             <ImgLink
               image={img3}
-              text="Notion Magazine"
-              link="/notion-magazine"
+              text="Creative Strategies"
+              link="/creative-strategies/"
             />
             <ImgLink
               image={img4}
-              text="Creative Strategies"
-              link="/creative-strategies"
+              text="Live Events" 
+              link="/live-events/"               
             />
             <ImgLink
               image={img5}
-              text="Content Creative & Production"
-              link="/"
+              text="Notion Magazine"
+              link="/notion-magazine/"              
             />
             <ImgLink
               image={img6}
-              text="Artist Services"
-              link="/artist-services"
+              text="Social Media" 
+              link="/social-media/" 
             />
           </div>
         </div>

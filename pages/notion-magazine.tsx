@@ -8,12 +8,12 @@ import Header from "@/components/common/Header";
 import Slider from "@/components/common/Slider";
 import ImgLink from "@/components/common/ImgLink";
 
-import img1 from "../public/assets/images/home/img-1.jpg";
-import img2 from "../public/assets/images/home/img-2.jpg";
-import img3 from "../public/assets/images/home/img-3.jpg";
-import img4 from "../public/assets/images/home/img-4.jpg";
-import img5 from "../public/assets/images/home/img-5.jpg";
-import img6 from "../public/assets/images/home/img-6.jpg";
+import img1 from "../public/assets/images/home/service_artist_services.jpg";
+import img2 from "../public/assets/images/home/service_content_production.jpg";
+import img3 from "../public/assets/images/home/service_creative_strategies.jpg";
+import img4 from "../public/assets/images/home/service_live_events.jpg";
+import img5 from "../public/assets/images/home/service_notion_magazine.jpg";
+import img6 from "../public/assets/images/home/service_social_media.jpg";
 
 const NotionMagazine: NextPage = () => {
   const { setPageTheme } = useAppContext();
@@ -25,7 +25,7 @@ const NotionMagazine: NextPage = () => {
     <>
       <div className="container">
         <Header
-          title="NOTION MAGAZINE"
+          title="Notion Magazine"
           summary="Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout. Notion Magazine communicates directly with Generation Z and can ensure your speaking to your target audience."
         />
       </div>
@@ -49,27 +49,36 @@ const NotionMagazine: NextPage = () => {
         <div className="mt-10">
           {/* Grid */}
           <div className="grid md:grid-cols-2 xl:grid-cols-3">
-            <ImgLink image={img1} text="Social Media" link="/" />
-            <ImgLink image={img2} text="Live Events" link="/live-events" />
+          <ImgLink 
+              image={img1} 
+              text="Artist Services"
+              link="/artist-services/"              
+            />
+            <ImgLink 
+              image={img2} 
+              text="Content Creative & Production"
+              link="/content-production/"              
+
+            />
             <ImgLink
               image={img3}
-              text="Notion Magazine"
-              link="/notion-magazine"
+              text="Creative Strategies"
+              link="/creative-strategies/"
             />
             <ImgLink
               image={img4}
-              text="Creative Strategies"
-              link="/creative-strategies"
+              text="Live Events" 
+              link="/live-events/"               
             />
             <ImgLink
               image={img5}
-              text="Content Creative & Production"
-              link="/"
+              text="Notion Magazine"
+              link="/notion-magazine/"              
             />
             <ImgLink
               image={img6}
-              text="Artist Services"
-              link="/artist-services"
+              text="Social Media" 
+              link="/social-media/" 
             />
           </div>
         </div>

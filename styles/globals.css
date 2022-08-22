@@ -80,4 +80,21 @@
   .container {
     @apply w-5/6 mx-auto max-w-[1471px];
   }
+
+  .bg-overlay-70:before {
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    @apply absolute top-0 left-0 h-full w-full z-10 bg-blend-multiply;
+  }
+
+  .bg-faded {
+    @apply relative;
+  }
+
+  .bg-faded:before {
+    content: "";
+    height: 212px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    @apply absolute top-0 left-0 w-full z-10 opacity-20;
+  }
 }
