@@ -8,13 +8,13 @@ import { Navigation, A11y } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 
-import img1 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200 (1).png";
-import img2 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200 (2).png";
-import img3 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200.png";
-import img4 from "../../public/assets/images/live-events/1.png";
-import img5 from "../../public/assets/images/live-events/Astrid S.png";
-import img6 from "../../public/assets/images/live-events/Griff.png";
-import img7 from "../../public/assets/images/live-events/Santino Le Saint.png";
+// import img1 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200 (1).png";
+// import img2 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200 (2).png";
+// import img3 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200.png";
+// import img4 from "../../public/assets/images/live-events/1.png";
+// import img5 from "../../public/assets/images/live-events/Astrid S.png";
+// import img6 from "../../public/assets/images/live-events/Griff.png";
+// import img7 from "../../public/assets/images/live-events/Santino Le Saint.png";
 
 const Slider = () => {
   const [totalSlides, setTotalSlides] = useState(0);

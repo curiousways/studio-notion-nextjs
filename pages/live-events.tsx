@@ -8,6 +8,18 @@ import Header from "@/components/common/Header";
 import Slider from "@/components/common/Slider";
 import ImageNav from "@/components/common/ImageNav";
 
+import img1 from "../public/assets/images/live-events/01.jpg";
+import img2 from "../public/assets/images/live-events/02.jpg";
+import img3 from "../public/assets/images/live-events/03.jpg";
+import img4 from "../public/assets/images/live-events/04.jpg";
+import img5 from "../public/assets/images/live-events/05.jpg";
+import img6 from "../public/assets/images/live-events/06.jpg";
+import img7 from "../public/assets/images/live-events/07.jpg";
+import img8 from "../public/assets/images/live-events/08.jpg";
+import img9 from "../public/assets/images/live-events/09.jpg";
+import img10 from "../public/assets/images/live-events/10.jpg";
+import img11 from "../public/assets/images/live-events/11.jpg";
+
 const LiveEvents: NextPage = () => {
   const { setPageTheme } = useAppContext();
 
