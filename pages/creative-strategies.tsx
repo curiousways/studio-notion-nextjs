@@ -1,23 +1,24 @@
 import { useEffect } from "react";
 
 import type { NextPage } from "next";
-import Image from "next/image";
 
 import { useAppContext } from "@/context/AppContext";
 
 import Header from "@/components/common/Header";
+import Slider from "@/components/common/Slider";
 import ImageNav from "@/components/common/ImageNav";
 
-import img1 from "../public/assets/images/home/service_artist_services.jpg";
-import img2 from "../public/assets/images/home/service_content_production.jpg";
-import img3 from "../public/assets/images/home/service_creative_strategies.jpg";
-import img4 from "../public/assets/images/home/service_live_events.jpg";
-import img5 from "../public/assets/images/home/service_notion_magazine.jpg";
-import img6 from "../public/assets/images/home/service_social_media.jpg";
-
-import spotify from "../public/assets/images/home/logo_nb_2.png";
-import bulldog from "../public/assets/images/home/logo_nb_2.png";
-import flannels from "../public/assets/images/home/logo_nb_2.png";
+import img1 from "../public/assets/images/creative-strategies/01.jpg";
+import img2 from "../public/assets/images/creative-strategies/02.jpg";
+import img3 from "../public/assets/images/creative-strategies/03.jpg";
+import img4 from "../public/assets/images/creative-strategies/04.jpg";
+import img5 from "../public/assets/images/creative-strategies/05.jpg";
+import img6 from "../public/assets/images/creative-strategies/06.jpg";
+import img7 from "../public/assets/images/creative-strategies/07.jpg";
+import img8 from "../public/assets/images/creative-strategies/08.jpg";
+import img9 from "../public/assets/images/creative-strategies/09.jpg";
+import img10 from "../public/assets/images/creative-strategies/10.jpg";
+import img11 from "../public/assets/images/creative-strategies/11.jpg";
 
 const CreativeStrategies: NextPage = () => {
   const { setPageTheme } = useAppContext();
@@ -36,26 +37,20 @@ const CreativeStrategies: NextPage = () => {
       </div>
 
       <main>
+        <Slider />
         <div className="container">
-          {/* Logos */}
-          <div className="grid gap-y-10 md:gap-y-10 md:gap-x-32 md:grid-cols-2 lg:grid-cols-3 max-w-[1271px] mx-auto text-center mt-10 mb-20">
-            <div className="text-center">
-              <div className="w-[240px] h-[110px] relative mx-auto">
-                <Image src={spotify} alt="spotify" layout="fill" />
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="w-[240px] h-[110px] relative mx-auto">
-                <Image src={flannels} alt="flannels" layout="fill" />
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="w-[240px] h-[110px] relative mx-auto">
-                <Image src={bulldog} alt="bulldog" layout="fill" />
-              </div>
-            </div>
+          <div className="max-w-[627px] font-sans-regular text-xl leading-8 space-y-4 mt-7">
+            <p>
+              We chat to multi-talented creative @josie_ho_chiu about the latest
+              step on her trailblazing path from Hong Kong to Hollywood.
+            </p>
+            <p>
+              Read the full feature at Notion.online Photography @martamichalak
+              Hair & Makeup @barriegmakeup Styling @hairyspice94 Production
+              @studionotion
+            </p>
           </div>
-        </div>
+        </div>        
         {/* Media */}
         <ImageNav />
       </main>

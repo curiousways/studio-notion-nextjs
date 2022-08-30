@@ -8,12 +8,17 @@ import Header from "@/components/common/Header";
 import Slider from "@/components/common/Slider";
 import ImageNav from "@/components/common/ImageNav";
 
-import img1 from "../public/assets/images/home/service_artist_services.jpg";
-import img2 from "../public/assets/images/home/service_content_production.jpg";
-import img3 from "../public/assets/images/home/service_creative_strategies.jpg";
-import img4 from "../public/assets/images/home/service_live_events.jpg";
-import img5 from "../public/assets/images/home/service_notion_magazine.jpg";
-import img6 from "../public/assets/images/home/service_social_media.jpg";
+import img1 from "../public/assets/images/social-media/01.jpg";
+import img2 from "../public/assets/images/social-media/02.jpg";
+import img3 from "../public/assets/images/social-media/03.jpg";
+import img4 from "../public/assets/images/social-media/04.jpg";
+import img5 from "../public/assets/images/social-media/05.jpg";
+import img6 from "../public/assets/images/social-media/06.jpg";
+import img7 from "../public/assets/images/social-media/07.jpg";
+import img8 from "../public/assets/images/social-media/08.jpg";
+import img9 from "../public/assets/images/social-media/09.jpg";
+import img10 from "../public/assets/images/social-media/10.jpg";
+import img11 from "../public/assets/images/social-media/11.jpg";
 
 const SocialMedia: NextPage = () => {
   const { setPageTheme } = useAppContext();

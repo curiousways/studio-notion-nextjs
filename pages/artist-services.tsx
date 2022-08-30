@@ -8,6 +8,18 @@ import Header from "@/components/common/Header";
 import Slider from "@/components/common/Slider";
 import ImageNav from "@/components/common/ImageNav";
 
+import img1 from "../public/assets/images/artist-services/01.jpg";
+import img2 from "../public/assets/images/artist-services/02.jpg";
+import img3 from "../public/assets/images/artist-services/03.jpg";
+import img4 from "../public/assets/images/artist-services/04.jpg";
+import img5 from "../public/assets/images/artist-services/05.jpg";
+import img6 from "../public/assets/images/artist-services/06.jpg";
+import img7 from "../public/assets/images/artist-services/07.jpg";
+import img8 from "../public/assets/images/artist-services/08.jpg";
+import img9 from "../public/assets/images/artist-services/09.jpg";
+import img10 from "../public/assets/images/artist-services/10.jpg";
+import img11 from "../public/assets/images/artist-services/11.jpg";
+
 const ArtistServices: NextPage = () => {
   const { setPageTheme } = useAppContext();
 
