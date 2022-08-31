@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y } from "swiper";
@@ -8,15 +9,11 @@ import { Navigation, A11y } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 
-// import img1 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200 (1).png";
-// import img2 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200 (2).png";
-// import img3 from "../../public/assets/images/live-events/Bryan-Asya-@b_aseya10-800x1200.png";
-// import img4 from "../../public/assets/images/live-events/1.png";
-// import img5 from "../../public/assets/images/live-events/Astrid S.png";
-// import img6 from "../../public/assets/images/live-events/Griff.png";
-// import img7 from "../../public/assets/images/live-events/Santino Le Saint.png";
+type Props = {
+  slides: StaticImageData[];
+};
 
-const Slider = () => {
+const Slider = ({ slides }: Props) => {
   const [totalSlides, setTotalSlides] = useState(0);
   const [slide, setSlide] = useState(1);
 
@@ -52,36 +49,12 @@ const Slider = () => {
           setSlide(swiper.activeIndex + 1);
         }}
       >
-        <SwiperSlide>
-          <Image priority src={img1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src={img2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src={img3} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src={img2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src={img3} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src={img1} />
-        </SwiperSlide>
-        {/* <SwiperSlide>
-          <Image priority src={img4} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src={img5} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src={img6} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image priority src={img7} />
-        </SwiperSlide> */}
+        {slides.map((slide) => (
+          <SwiperSlide>
+            <Image priority src={slide} />
+          </SwiperSlide>
+        ))}
+
         <div className="mt-4 font-sans-regular flex items-center space-x-8">
           <span className="swiper-button-prev text-[40px] leading-8 cursor-pointer">
             ←

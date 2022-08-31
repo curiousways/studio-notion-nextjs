@@ -20,6 +20,20 @@ import img9 from "../public/assets/images/creative-strategies/09.jpg";
 import img10 from "../public/assets/images/creative-strategies/10.jpg";
 import img11 from "../public/assets/images/creative-strategies/11.jpg";
 
+const slides = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+];
+
 const CreativeStrategies: NextPage = () => {
   const { setPageTheme } = useAppContext();
 
@@ -37,7 +51,7 @@ const CreativeStrategies: NextPage = () => {
       </div>
 
       <main>
-        <Slider />
+        <Slider slides={slides} />
         <div className="container">
           <div className="max-w-[627px] font-sans-regular text-xl leading-8 space-y-4 mt-7">
             <p>
@@ -50,7 +64,7 @@ const CreativeStrategies: NextPage = () => {
               @studionotion
             </p>
           </div>
-        </div>        
+        </div>
         {/* Media */}
         <ImageNav />
       </main>
