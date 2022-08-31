@@ -49,8 +49,8 @@ const Slider = ({ slides }: Props) => {
           setSlide(swiper.activeIndex + 1);
         }}
       >
-        {slides.map((slide) => (
-          <SwiperSlide>
+        {slides.map((slide, i) => (
+          <SwiperSlide key={i}>
             <Image priority src={slide} />
           </SwiperSlide>
         ))}
