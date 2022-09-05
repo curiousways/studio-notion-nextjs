@@ -20,6 +20,18 @@ import img9 from "../public/assets/images/notion-magazine/09.jpg";
 import img10 from "../public/assets/images/notion-magazine/10.jpg";
 
 const slides = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+const text = [
+  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
+  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
+  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
+  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
+  "consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
+  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
+];
 
 const NotionMagazine: NextPage = () => {
   const { setPageTheme } = useAppContext();
@@ -37,20 +49,8 @@ const NotionMagazine: NextPage = () => {
       </div>
 
       <main>
-        <Slider slides={slides} />
-        <div className="container">
-          <div className="max-w-[627px] font-sans-regular text-xl leading-8 space-y-4 mt-7">
-            <p>
-              We chat to multi-talented creative @josie_ho_chiu about the latest
-              step on her trailblazing path from Hong Kong to Hollywood.
-            </p>
-            <p>
-              Read the full feature at Notion.online Photography @martamichalak
-              Hair & Makeup @barriegmakeup Styling @hairyspice94 Production
-              @studionotion
-            </p>
-          </div>
-        </div>
+        <Slider slides={slides} textSlides={text} />
+
         {/* Media */}
         <ImageNav />
       </main>

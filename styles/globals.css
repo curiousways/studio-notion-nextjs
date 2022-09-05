@@ -102,3 +102,15 @@
     @apply absolute top-0 left-0 w-full z-10 opacity-20;
   }
 }
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 auto;
+  position: relative;
+}
