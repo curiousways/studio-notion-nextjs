@@ -47,7 +47,7 @@ const Slider = ({ slides, textSlides }: Props) => {
         <div className="embla" ref={emblaRef}>
           <div className="embla__container">
             {slides.map((slide, i) => (
-              <div className="embla__slide pl-4 xl:pl-6" key={i}>
+              <div className="embla__slide pl-2" key={i}>
                 <Image
                   priority
                   src={slide}
