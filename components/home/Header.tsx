@@ -8,7 +8,12 @@ const Header = () => {
           muted
           loop
           className="h-full w-full object-cover"
-        />
+        >
+          <source
+            src={`/assets/videos/home-video.mp4#t=0.1`}
+            type="video/mp4"
+          />
+        </video>
 
         <h1 className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-white uppercase z-10 mt-20 xl:mt-0 w-full px-4 xl:px-0">
           studio notion is a media and content business.
