@@ -42,12 +42,12 @@ const Home: NextPage = () => {
           <ImageNav />
         </div>
 
-        {/* Our Work */}
+        {/* Partners */}
         <div
-          id="our-work"
+          id="partners"
           className="container py-20 xl:pt-[104px] xl:pb-[151px] space-y-10 xl:space-y-[75px]"
         >
-          <h3 className="uppercase">Our Work</h3>
+          <h3 className="uppercase">Some of our partners</h3>
           <div className="grid gap-y-10 md:gap-y-20 md:gap-x-32 md:grid-cols-2 xl:grid-cols-3 max-w-[1271px] mx-auto text-center">
             {logos.map(({ src, alt, text }) => (
               <div key={alt} className="text-center mx-auto space-y-4">

@@ -24,7 +24,7 @@ const ImageNav = () => {
           link="/creative-strategies/"
         />
         <ImgLink image={img4} text="Live Events" link="/live-events/" />
-        <ImgLink image={img5} text="Notion Magazine" link="/notion-magazine/" />
+        <ImgLink image={img5} text="Notion Print &amp; Digital" link="/notion-magazine/" />
         <ImgLink image={img6} text="Social Media" link="/social-media/" />
       </div>
     </div>

@@ -25,24 +25,24 @@ export const logos = [
     text: "Live Events",
   },
   {
+    src: northFace,
+    alt: "The North Face",
+    text: "Content Production",
+  },  
+  {
     src: bulldog,
     alt: "Bulldog Gin",
     text: "Social Media",
   },
   {
-    src: northFace,
-    alt: "The North Face",
-    text: "Content Production",
-  },
+    src: virgin,
+    alt: "Virgin Money",
+    text: "Creative Strategies",
+  },  
   {
     src: havana,
     alt: "Havana Club",
     text: "Live Events",
-  },
-  {
-    src: virgin,
-    alt: "Virgin Money",
-    text: "Creative Strategies",
   },
   {
     src: warner,
