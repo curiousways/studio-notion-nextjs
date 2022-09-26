@@ -4,7 +4,8 @@ const nextConfig = {
   trailingSlash: true,
   env: {
     SITE_URL: "site url",
-    SITE_TITLE: "Studio Notion",
+    SITE_TITLE:
+      "Studio Notion - unrivalled access for brands to new music and Generation Z",
     GOOGLE_ANALYTICS_ID: "yourgaid",
     FATHOM_ANALYTICS_ID: "yourfathomanalyticsid",
   },

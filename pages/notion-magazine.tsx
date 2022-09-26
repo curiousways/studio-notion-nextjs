@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import type { NextPage } from "next";
 
+import { NextSeo } from "next-seo";
+
 import { useAppContext } from "@/context/AppContext";
 
 import Header from "@/components/common/Header";
@@ -41,6 +43,14 @@ const NotionMagazine: NextPage = () => {
   }, []);
   return (
     <>
+      <NextSeo
+        title="Studio Notion - Print & Digital"
+        description="Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout"
+        openGraph={{
+          description:
+            "Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout",
+        }}
+      />
       <div className="container">
         <Header
           title="Notion Magazine"

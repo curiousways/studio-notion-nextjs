@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import type { NextPage } from "next";
 
+import { NextSeo } from "next-seo";
+
 import { useAppContext } from "@/context/AppContext";
 
 import Header from "@/components/common/Header";
@@ -57,6 +59,13 @@ const LiveEvents: NextPage = () => {
 
   return (
     <>
+      <NextSeo
+        title="Studio Notion - Live Events"
+        description=""
+        openGraph={{
+          description: "",
+        }}
+      />
       <div className="container">
         <Header
           title="Live Events"

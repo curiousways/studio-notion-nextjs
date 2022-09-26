@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import type { NextPage } from "next";
 
+import { NextSeo } from "next-seo";
+
 import { useAppContext } from "@/context/AppContext";
 
 import Header from "@/components/common/Header";
@@ -42,6 +44,13 @@ const ArtistServices: NextPage = () => {
 
   return (
     <>
+      <NextSeo
+        title="Studio Notion - Artist Services"
+        description=""
+        openGraph={{
+          description: "",
+        }}
+      />
       <div className="container">
         <Header
           title="Artist Services"

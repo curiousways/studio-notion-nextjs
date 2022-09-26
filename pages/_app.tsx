@@ -47,25 +47,26 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo
         title={siteTitle}
-        description="Enter description here"
+        description="Studio Notion exists to embed brands into youth music-culture using our decades of experience within the sector"
         canonical={`${siteUrl}${router.asPath === "/" ? "" : router.asPath}`}
         openGraph={{
           type: "website",
           url: `${siteUrl}${router.asPath === "/" ? "" : router.asPath}`,
           site_name: siteTitle,
           title: siteTitle,
-          description: "Enter description here",
+          description:
+            "Studio Notion exists to embed brands into youth music-culture using our decades of experience within the sector",
           images: [
             {
               url: "/social-share.jpg",
               width: 1200,
               height: 630,
-              alt: "Enter social image alt text here",
+              alt: "social image",
             },
           ],
         }}
         twitter={{
-          handle: "@twitterhandle",
+          handle: "@NotionMagazine",
           site: siteUrl,
           cardType: "summary_large_image",
         }}
