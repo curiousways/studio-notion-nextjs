@@ -68,7 +68,7 @@ const SocialMedia: NextPage = () => {
       />
       <div className="container">
         <Header
-          title="Live Events"
+          title="Social Media"
           summary="Studio Notion has run events from 200 people to over 3,000 and has a engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
         />
       </div>

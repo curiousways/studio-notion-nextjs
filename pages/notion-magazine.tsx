@@ -44,7 +44,7 @@ const NotionMagazine: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Studio Notion - Print & Digital"
+        title="Studio Notion - Print &amp; Digital"
         description="Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout"
         openGraph={{
           description:
@@ -53,7 +53,7 @@ const NotionMagazine: NextPage = () => {
       />
       <div className="container">
         <Header
-          title="Notion Magazine"
+          title="Notion Print &amp; Digital"
           summary="Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout. Notion Magazine communicates directly with Generation Z and can ensure your speaking to your target audience."
         />
       </div>

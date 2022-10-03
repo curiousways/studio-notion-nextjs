@@ -15,7 +15,7 @@ const ImageNav = () => {
         <ImgLink image={img1} text="Artist Services" link="/artist-services/" />
         <ImgLink
           image={img2}
-          text="Content Creative & Production"
+          text="Content Creative &amp; Production"
           link="/content-production/"
         />
         <ImgLink
