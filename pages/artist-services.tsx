@@ -22,18 +22,18 @@ import img9 from "../public/assets/images/artist-services/09.jpg";
 import img10 from "../public/assets/images/artist-services/10.jpg";
 
 const slides = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
-const text = [
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-];
+// const text = [
+//   "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
+//   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
+//   "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+//   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
+//   "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+//   "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
+//   "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+//   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
+//   "consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
+//   "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
+// ];
 
 const ArtistServices: NextPage = () => {
   const { setPageTheme } = useAppContext();
@@ -46,20 +46,20 @@ const ArtistServices: NextPage = () => {
     <>
       <NextSeo
         title="Studio Notion - Artist Services"
-        description=""
+        description="Whether it is press shots, creative consultancy, merch or NFTs, we’re here to ensure independent artists are the majority beneficiary of all their products. We deliver end-to-end management of artist assets, creative & products."
         openGraph={{
-          description: "",
+          description: "Whether it is press shots, creative consultancy, merch or NFTs, we’re here to ensure independent artists are the majority beneficiary of all their products. We deliver end-to-end management of artist assets, creative & products.",
         }}
       />
       <div className="container">
         <Header
           title="Artist Services"
-          summary="Studio Notion has run events from 200 people to over 3,000 and has a engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
+          summary="Whether it is press shots, creative consultancy, merch or NFTs, we’re here to ensure independent artists are the majority beneficiary of all their products. We deliver end-to-end management of artist assets, creative & products."
         />
       </div>
 
       <main>
-        <Slider slides={slides} textSlides={text} />
+        <Slider slides={slides} />
         {/* Media */}
         <ImageNav />
       </main>

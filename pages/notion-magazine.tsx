@@ -23,16 +23,16 @@ import img10 from "../public/assets/images/notion-magazine/10.jpg";
 
 const slides = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 const text = [
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
+  "Knucks",
+  "Bree Runway",
+  "Lauv",
+  "Julie Adenuga & JME",
+  "Shygirl",
+  "Sam Fender",
+  "Charlotte Lawrence",
+  "Aitch",
+  "Griff",
+  "Loyle Carner",
 ];
 
 const NotionMagazine: NextPage = () => {
@@ -45,16 +45,16 @@ const NotionMagazine: NextPage = () => {
     <>
       <NextSeo
         title="Studio Notion - Print &amp; Digital"
-        description="Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout"
+        description="Bi-annual magazine Notion, digital destination notion.online and owned social media channels can support your campaigns by covering your brands activity or hero’ing product across platforms. Notion communicates directly with Generation Z and can ensure your speaking to your target audience."
         openGraph={{
           description:
-            "Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout",
+            "Bi-annual magazine Notion, digital destination notion.online and owned social media channels can support your campaigns by covering your brands activity or hero’ing product across platforms. Notion communicates directly with Generation Z and can ensure your speaking to your target audience.",
         }}
       />
       <div className="container">
         <Header
           title="Notion Print &amp; Digital"
-          summary="Bi-annual magazine NOTION, digital notion.online and social channels can support your campaigns by covering your brands activity or hero’ing product throughout. Notion Magazine communicates directly with Generation Z and can ensure your speaking to your target audience."
+          summary="Bi-annual magazine Notion, digital destination notion.online and owned social media channels can support your campaigns by covering your brands activity or hero’ing product across platforms. Notion communicates directly with Generation Z and can ensure your speaking to your target audience."
         />
       </div>
 

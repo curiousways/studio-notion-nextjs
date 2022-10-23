@@ -37,17 +37,17 @@ const slides = [
 ];
 
 const text = [
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+  "Creative & Content Production for Nike Air Max 270 React",
+  "Content Production for The North Face",
+  "Creative & Content Production for Beats By Dre",
+  "Creative & Content Production for Defected Records",
+  "Content Production for BULLDOG Gin & Field Day",
+  "Creative & Content Production for FS Magazine",
+  "Creative & Content Production for K-Swis",
+  "Content Production for Adidas",
+  "Creative & Content Production for Nike Air Max 270 React",
+  "Creative & Content Production for New Balance",
+  "Content Production for Virgin Money",
 ];
 
 const ContentProduction: NextPage = () => {
@@ -61,15 +61,15 @@ const ContentProduction: NextPage = () => {
     <>
       <NextSeo
         title="Studio Notion - Content Creative &amp; Production"
-        description=""
+        description="Our category leading content team can ideate and produce any digital content you need. From campaign images and video to metaverse products and talent-led shoots. We also have an in-house studio to capture trendsetting content."
         openGraph={{
-          description: "",
+          description: "Our category leading content team can ideate and produce any digital content you need. From campaign images and video to metaverse products and talent-led shoots. We also have an in-house studio to capture trendsetting content.",
         }}
       />
       <div className="container">
         <Header
           title="Content Creative &amp; Production"
-          summary="Studio Notion has run events from 200 people to over 3,000 and has a engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
+          summary="Our category leading content team can ideate and produce any digital content you need. From campaign images and video to metaverse products and talent-led shoots. We also have an in-house studio to capture trendsetting content."
         />
       </div>
 

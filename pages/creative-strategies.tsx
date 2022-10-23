@@ -37,17 +37,17 @@ const slides = [
 ];
 
 const text = [
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+  "Joy Crookes x Spotify",
+  "Joy Crookes x Spotify",
+  "Joy Crookes x Spotify",
+  "PizzaExpress ‘Behind The Base’",
+  "PizzaExpress Live including JGrrey, Louis III and James Smith",
+  "Amazon Music’s +44 Playlist Brand",
+  "Amazon Music x Metropolis Studios",
+  "Amazon Music x Metropolis Studios",
+  "Gucci at Flannels with Knucks & Olivia Dean",
+  "Gucci at Flannels with Knucks & Olivia Dean",
+  "P&G’s Braun Grooming with Dominic Calvert Lewis",
 ];
 
 const CreativeStrategies: NextPage = () => {
@@ -61,16 +61,16 @@ const CreativeStrategies: NextPage = () => {
     <>
       <NextSeo
         title="Studio Notion - Creative Strategies"
-        description="Helping brands reach an untapped Generation Z audience is our passion. We know what this demographic wants to see, hear and do"
+        description="Helping brands reach an untapped Generation Z audience is our passion. We know what this demographic wants to see, hear, and do. We’ll work with you to develop bespoke creative strategies that get your brand noticed across social, experiential, and digital media."
         openGraph={{
           description:
-            "Helping brands reach an untapped Generation Z audience is our passion. We know what this demographic wants to see, hear and do",
+            "Helping brands reach an untapped Generation Z audience is our passion. We know what this demographic wants to see, hear, and do. We’ll work with you to develop bespoke creative strategies that get your brand noticed across social, experiential, and digital media.",
         }}
       />
       <div className="container">
         <Header
           title="Creative Strategies"
-          summary="Helping brands reach an untapped Generation Z audience is our passion. We know what this demographic wants to see, hear and do. We’ll work with you to develop bespoke creative strategies that get your brand noticed across social, experiential and digital media."
+          summary="Helping brands reach an untapped Generation Z audience is our passion. We know what this demographic wants to see, hear, and do. We’ll work with you to develop bespoke creative strategies that get your brand noticed across social, experiential, and digital media."
         />
       </div>
 

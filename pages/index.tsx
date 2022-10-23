@@ -8,13 +8,6 @@ import { useAppContext } from "@/context/AppContext";
 import Header from "@/components/home/Header";
 import ImageNav from "@/components/common/ImageNav";
 
-import img1 from "../public/assets/images/home/service_artist_services.jpg";
-import img2 from "../public/assets/images/home/service_content_production.jpg";
-import img3 from "../public/assets/images/home/service_creative_strategies.jpg";
-import img4 from "../public/assets/images/home/service_live_events.jpg";
-import img5 from "../public/assets/images/home/service_notion_magazine.jpg";
-import img6 from "../public/assets/images/home/service_social_media.jpg";
-
 import { logos } from "@/data/home";
 
 const Home: NextPage = () => {
@@ -54,7 +47,6 @@ const Home: NextPage = () => {
                 <div className="w-[240px] h-[110px] relative mx-auto">
                   <Image src={src} alt={alt} layout="fill" />
                 </div>
-                <p className="max-w-[410px]">{text}</p>
               </div>
             ))}
           </div>

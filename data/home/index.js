@@ -12,46 +12,37 @@ export const logos = [
   {
     src: flannels,
     alt: "Flannels",
-    text: "Creative Strategies",
   },
   {
     src: nb,
     alt: "New Balance",
-    text: "Content Production",
   },
   {
     src: dm,
     alt: "Dr Martens",
-    text: "Live Events",
   },
   {
     src: northFace,
     alt: "The North Face",
-    text: "Content Production",
   },  
   {
     src: bulldog,
     alt: "Bulldog Gin",
-    text: "Social Media",
   },
   {
     src: virgin,
     alt: "Virgin Money",
-    text: "Creative Strategies",
   },  
   {
     src: havana,
     alt: "Havana Club",
-    text: "Live Events",
   },
   {
     src: warner,
     alt: "Warner Music",
-    text: "Artist Services",
   },
   {
     src: estrella,
     alt: "Estrella",
-    text: "Social Media",
   },
 ];

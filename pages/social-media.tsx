@@ -37,17 +37,17 @@ const slides = [
 ];
 
 const text = [
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+  "BULLDOG Gin x Charlotte De Carle",
+  "",
+  "BULLDOG Gin x Tia Kofi",
+  "",
+  "",
+  "",
+  "",
+  "Estrella Galicia x Joey London",
+  "",
+  "Estrella Galicia x Lily Mercer",
+  "",
 ];
 
 const SocialMedia: NextPage = () => {
@@ -61,15 +61,15 @@ const SocialMedia: NextPage = () => {
     <>
       <NextSeo
         title="Studio Notion - Social Media"
-        description=""
+        description="Studio Notion can deliver social channel strategies & influencer engagement to live on brand-owned platforms which will engage, excite, and drive action from Generation Z."
         openGraph={{
-          description: "",
+          description: "Studio Notion can deliver social channel strategies & influencer engagement to live on brand-owned platforms which will engage, excite, and drive action from Generation Z.",
         }}
       />
       <div className="container">
         <Header
           title="Social Media"
-          summary="Studio Notion has run events from 200 people to over 3,000 and has a engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
+          summary="Studio Notion can deliver social channel strategies & influencer engagement to live on brand-owned platforms which will engage, excite, and drive action from Generation Z."
         />
       </div>
 

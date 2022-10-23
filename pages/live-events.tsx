@@ -37,17 +37,17 @@ const slides = [
 ];
 
 const text = [
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "consectetur adipisicing elit. Sit vero nesciunt maiores ratione voluptatum recusandae consequuntur ea ipsa reiciendis ad.",
-  "Read the full feature at Notion.online Photography @martamichalak Hair & Makeup @barriegmakeup Styling @hairyspice94 Production @studionotion",
-  "We chat to multi-talented creative @josie_ho_chiu about the latest step on her trailblazing path from Hong Kong to Hollywood.",
+  "Dr Martens Boot Room, Camden",
+  "",
+  "Swatch, Shoreditch",
+  "Virgin Money, The O2 Arena",
+  "Dr Martens Boot Room, Camden",
+  "PizzaExpress Live, Dean Street",
+  "PizzaExpress Live, Dean Street",
+  "K-Swiss, King’s Cross",
+  "Amazon Music, Metropolis Studios",
+  "PizzaExpress Live, Dean Street",
+  "Virgin Money, Kensington",
 ];
 
 const LiveEvents: NextPage = () => {
@@ -61,15 +61,15 @@ const LiveEvents: NextPage = () => {
     <>
       <NextSeo
         title="Studio Notion - Live Events"
-        description=""
+        description="Studio Notion has run events from 200 people to over 3,000 and has an engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
         openGraph={{
-          description: "",
+          description: "Studio Notion has run events from 200 people to over 3,000 and has an engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests.",
         }}
       />
       <div className="container">
         <Header
           title="Live Events"
-          summary="Studio Notion has run events from 200 people to over 3,000 and has a engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
+          summary="Studio Notion has run events from 200 people to over 3,000 and has an engaged Generation Z attendee database to ensure your party is buzzing. Delivering end-to-end production and management we thrive with live music performances and interactive moments for guests."
         />
       </div>
 
