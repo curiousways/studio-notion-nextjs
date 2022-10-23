@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         >
           <h3 className="uppercase">Some of our partners</h3>
           <div className="grid gap-y-10 md:gap-y-20 md:gap-x-32 md:grid-cols-2 xl:grid-cols-3 max-w-[1271px] mx-auto text-center">
-            {logos.map(({ src, alt, text }) => (
+            {logos.map(({ src, alt }) => (
               <div key={alt} className="text-center mx-auto space-y-4">
                 <div className="w-[240px] h-[110px] relative mx-auto">
                   <Image src={src} alt={alt} layout="fill" />
