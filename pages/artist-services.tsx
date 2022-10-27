@@ -46,15 +46,15 @@ const ArtistServices: NextPage = () => {
     <>
       <NextSeo
         title="Studio Notion - Artist Services"
-        description="Whether it is press shots, creative consultancy, merch or NFTs, we’re here to ensure independent artists are the majority beneficiary of all their products. We deliver end-to-end management of artist assets, creative & products."
+        description="Whether it is press shots, creative consultancy, merch design or NFTs, we’re here to ensure independent artists are elevated across all aspects of their career and output. We deliver end-to-end management of artist assets, creative & products.."
         openGraph={{
-          description: "Whether it is press shots, creative consultancy, merch or NFTs, we’re here to ensure independent artists are the majority beneficiary of all their products. We deliver end-to-end management of artist assets, creative & products.",
+          description: "Whether it is press shots, creative consultancy, merch design or NFTs, we’re here to ensure independent artists are elevated across all aspects of their career and output. We deliver end-to-end management of artist assets, creative & products.",
         }}
       />
       <div className="container">
         <Header
           title="Artist Services"
-          summary="Whether it is press shots, creative consultancy, merch or NFTs, we’re here to ensure independent artists are the majority beneficiary of all their products. We deliver end-to-end management of artist assets, creative & products."
+          summary="Whether it is press shots, creative consultancy, merch design or NFTs, we’re here to ensure independent artists are elevated across all aspects of their career and output. We deliver end-to-end management of artist assets, creative & products."
         />
       </div>
 

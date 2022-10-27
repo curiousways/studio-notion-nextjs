@@ -12,20 +12,36 @@ const ImageNav = () => {
     <div className="mt-10">
       {/* Grid */}
       <div className="grid md:grid-cols-2 xl:grid-cols-3">
-        <ImgLink image={img1} text="Artist Services" link="/artist-services/" />
         <ImgLink
           image={img2}
           text="Content Creative &amp; Production"
           link="/content-production/"
-        />
+        />    
         <ImgLink
           image={img3}
           text="Creative Strategies"
           link="/creative-strategies/"
+        />    
+        <ImgLink 
+          image={img4} 
+          text="Live Events" 
+          link="/live-events/" 
+        />  
+        <ImgLink 
+          image={img6} 
+          text="Social Media" 
+          link="/social-media/" 
+        />   
+        <ImgLink 
+          image={img5} 
+          text="Notion Print &amp; Digital" 
+          link="/notion-magazine/" 
+        />                           
+        <ImgLink 
+          image={img1} 
+          text="Artist Services" 
+          link="/artist-services/" 
         />
-        <ImgLink image={img4} text="Live Events" link="/live-events/" />
-        <ImgLink image={img5} text="Notion Print &amp; Digital" link="/notion-magazine/" />
-        <ImgLink image={img6} text="Social Media" link="/social-media/" />
       </div>
     </div>
   );

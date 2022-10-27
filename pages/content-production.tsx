@@ -43,7 +43,7 @@ const text = [
   "Creative & Content Production for Defected Records",
   "Content Production for BULLDOG Gin & Field Day",
   "Creative & Content Production for FS Magazine",
-  "Creative & Content Production for K-Swis",
+  "Creative & Content Production for K-Swiss",
   "Content Production for Adidas",
   "Creative & Content Production for Nike Air Max 270 React",
   "Creative & Content Production for New Balance",
