@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
-import * as Fathom from "fathom-client";
 
 import * as gtag from "../lib/gtag";
 
@@ -17,25 +16,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const siteUrl = process.env.SITE_URL as string;
   const siteTitle = process.env.SITE_TITLE;
-  const fathom = process.env.FATHOM_ANALYTICS_ID as string; //fathom analytics id
-  const siteUrlhttpsStripped = process.env.SITE_URL?.split("//")[1] as string;
 
   useEffect(() => {
-    // Load fathom analytics
-    // Fathom.load(fathom, {
-    //   includedDomains: [siteUrlhttpsStripped],
-    //   excludedDomains: ["localhost", "*.vercel.app"],
-    // });
-
     // Google Analytics
     const handleRouteChange = (url: URL) => {
       gtag.pageview(url);
     };
-
-    // Fathom Analytics
-    // const handleRouteChange = () => {
-    //   Fathom.trackPageview();
-    // };
 
     router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
